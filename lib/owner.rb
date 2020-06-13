@@ -1,3 +1,5 @@
+require 'pry'
+
 class Owner
   attr_reader :name, :species
   
@@ -72,7 +74,8 @@ def feed_cats
 end
 
 def sell_pets
-  
+  pets = self.dogs.concat(self.cats)
+  binding.pry
 end
 
 def list_pets
