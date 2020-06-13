@@ -82,7 +82,9 @@ def sell_pets
 end
 
 def list_pets
-  
+  dogs = self.dogs 
+  cats = self.cats 
+  puts "I have #{dogs.count} dog(s), and #{cats.count} cat(s)."
 end
 
 
