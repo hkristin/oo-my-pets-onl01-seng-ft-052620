@@ -63,13 +63,12 @@ def walk_dogs()
     dog.mood = "happy"
   end
 end
-end
 
 def feed_cats
   
 end
 
-def sell-pets
+def sell_pets
   
 end
 
