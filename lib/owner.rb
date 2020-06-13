@@ -57,8 +57,8 @@ def buy_dog(name)
   dog = Dog.new(name, self)
 end
 
-def walk_dogs
-  
+def walk_dogs()
+  dogs = self.dogs
 end
 
 def feed_cats
