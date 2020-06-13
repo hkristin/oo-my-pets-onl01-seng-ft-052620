@@ -75,7 +75,7 @@ end
 
 def sell_pets
   pets = self.dogs.concat(self.cats)
-  binding.pry
+  pets.each do |
 end
 
 def list_pets
