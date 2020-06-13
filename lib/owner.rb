@@ -38,5 +38,15 @@ class Owner
     end
     cats
   end
+  
+  def dogs
+    dogs = []
+    Dog.all.each do |dog|
+      if dog.owner.name == self.name
+        dogs << dog
+      end
+    end
+    dogs
+  end
 
 end
