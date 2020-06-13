@@ -1,5 +1,4 @@
 class Owner
-  attr_accessor :cats, :dogs
   attr_reader :name, :species
   
   @@all = []
@@ -8,8 +7,6 @@ class Owner
     @name = name
     @species = species
     @@all << self
-    @cats = []
-    @dogs = []
   end
   
   def species
@@ -30,6 +27,16 @@ class Owner
   
   def self.reset_all
     @@all.clear
+  end
+  
+  def cats 
+    cats = []
+    Cat.all.each do |cat|
+      if cat.owner.name == self.name 
+        cats << cat 
+      end 
+    end
+    cats
   end
 
 end
