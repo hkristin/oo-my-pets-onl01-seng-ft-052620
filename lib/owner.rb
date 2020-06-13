@@ -31,12 +31,5 @@ class Owner
   def self.reset_all
     @@all.clear
   end
-  
-  def cats
-    self.cats
-  end
-  
-  def dogs
-    self.dogs
-  end
+
 end
