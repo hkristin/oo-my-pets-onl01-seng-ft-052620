@@ -65,7 +65,10 @@ def walk_dogs()
 end
 
 def feed_cats
-  
+  cats = self.cats
+  cats.each do |cat|
+    cat.mood = "happy"
+  end
 end
 
 def sell_pets
