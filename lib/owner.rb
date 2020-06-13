@@ -63,6 +63,7 @@ def walk_dogs()
     dog.mood = "happy"
   end
 end
+end
 
 def feed_cats
   
