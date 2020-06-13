@@ -32,7 +32,7 @@ class Owner
   def cats 
     cats = []
     Cat.all.each do |cat|
-      if cat.owner.name == self.name 
+      if cat.owner == self
         cats << cat 
       end 
     end
@@ -42,7 +42,7 @@ class Owner
   def dogs
     dogs = []
     Dog.all.each do |dog|
-      if dog.owner.name == self.name
+      if dog.owner == self
         dogs << dog
       end
     end
